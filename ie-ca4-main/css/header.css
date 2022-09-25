@@ -1,0 +1,270 @@
+@import url("../css/normalize.css");
+
+.header {
+    position: fixed;
+    height: 3.5em;
+    width: 100%;
+    top: 0;
+    background: #B12025;
+    direction: rtl;
+    align-items: center;
+    flex-direction: row;
+    display: flex;
+    font-size: 1em;
+    white-space: nowrap;
+    z-index: 100000000000;
+}
+
+.iemdb-img img{
+    width: 60px;
+    height: 56px;
+    left: 0;
+    top: 0;
+    position: fixed;
+}
+
+.profile-img img{
+    width: 40px;
+    height: 40px;
+    right: 10px;
+    top: 7px;
+    position: absolute;
+}
+
+.dropdown_profile img{
+    width: 40px;
+    height: 40px;
+    right: 10px;
+    top: 7px;
+    display: inline-block;
+    position: absolute;
+}
+
+.search-container{
+    margin-top: 5px;
+    background: #fff;
+    height: 30px;
+    border-radius: 20px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.8s;
+    width: 300px;
+    right: 60px;
+    position: absolute;
+  }
+
+  .search-container .search-input{
+      background: transparent;
+      border: none;
+      outline:none;
+      width: 0px;
+      font-weight: 500;
+      font-size: 16px;
+      transition: 0.8s;
+      width: 400px;
+
+  }
+
+  .search-container .search-btn .fa{
+      color: #B12025;
+  }
+
+.dropdown {
+  position: absolute;
+  display: inline-block;
+  left: 870px;
+  background: #fff;
+  border-radius: 20px;
+}
+
+.dropdown > input[type="checkbox"] {
+  position: absolute;
+  left: -100vw;
+}
+
+.dropdown > label,
+.dropdown > a[role="button"] {
+  margin-top: 5px;
+  display: inline-block;
+  padding: 0px 15px;
+  line-height: 1.5em;
+  text-decoration: none;
+  border-radius: 30px;
+  cursor: pointer;
+  /*-webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;*/
+  color: #B12025;
+}
+
+.dropdown > label:hover,
+.dropdown > a[role="button"]:hover,
+.dropdown > a[role="button"]:focus {
+  border-color: #B12025;
+}
+
+.dropdown > label:after,
+.dropdown > a[role="button"]:after {
+  content: "\f0d7";
+  font-family: FontAwesome;
+  display: inline-block;
+  margin-left: 6px;
+}
+
+.dropdown > ul {
+  position: absolute;
+  z-index: 999;
+  display: block;
+  left: -100vw;
+  top: calc(1.5em + 14px);
+  background: rgba(150, 0, 0, 0.5);
+  text-align: center;
+  padding: 6px 0;
+  margin: 0;
+  list-style: none;
+  width: 100%;
+  border-radius: 30px;
+  -webkit-box-shadow: 0 3px 8px rgba(0,0,0,.15);
+  -moz-box-shadow: 0 3px 8px rgba(0,0,0,.15);
+  box-shadow: 0 3px 8px rgba(0,0,0,.15);
+}
+
+.dropdown > ul a {
+  display: block;
+  padding: 6px 15px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.dropdown > ul a:hover,
+.dropdown > ul a:focus {
+    color: #B12025;
+}
+
+.dropdown > input[type="checkbox"]:checked ~ ul,
+.dropdown > ul:target {
+  left: 0;
+}
+
+.dropdown > [type="checkbox"]:checked + label:after,
+.dropdown > ul:target ~ a:after {
+  content: "\f0d8";
+}
+
+.dropdown a.close {
+  display: none;
+}
+
+.dropdown > ul:target ~ a.close {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  text-indent: -100vw;
+  z-index: 1000;
+}
+
+/*----------------------*/
+
+.dropdown_profile {
+    width: 170px;
+    height: 40px;
+    right: 5px;
+    top: 2px;
+    position: absolute;
+    display: inline-block;
+}
+
+.dropdown_profile > input[type="checkbox"] {
+  position: absolute;
+  left: -100vw;
+}
+
+.dropdown_profile > label,
+.dropdown_profile > a[role="button"] {
+  margin-top: 5px;
+  display: inline-block;
+  padding: 0px 15px;
+  line-height: 1.5em;
+  text-decoration: none;
+  border-radius: 30px;
+  cursor: pointer;
+  /*-webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;*/
+  color: #B12025;
+}
+
+.dropdown_profile > label:hover,
+.dropdown_profile > a[role="button"]:hover,
+.dropdown_profile > a[role="button"]:focus {
+  border-color: #B12025;
+}
+
+.dropdown_profile > label:after,
+.dropdown_profile > a[role="button"]:after {
+  content: "\f0d7";
+  font-family: FontAwesome;
+  display: inline-block;
+  margin-left: 6px;
+}
+
+.dropdown_profile > ul {
+  position: absolute;
+  z-index: 999;
+  display: block;
+  left: -100vw;
+  top: calc(1.5em + 14px);
+  background: rgba(150, 0, 0, 0.5);
+  text-align: center;
+  padding: 6px 0;
+  margin: 0;
+  list-style: none;
+  width: 100%;
+  border-radius: 30px;
+  -webkit-box-shadow: 0 3px 8px rgba(0,0,0,.15);
+  -moz-box-shadow: 0 3px 8px rgba(0,0,0,.15);
+  box-shadow: 0 3px 8px rgba(0,0,0,.15);
+}
+
+.dropdown_profile > ul a {
+  display: block;
+  padding: 6px 15px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.dropdown_profile > ul a:hover,
+.dropdown_profile > ul a:focus {
+    color: #B12025;
+}
+
+.dropdown_profile > input[type="checkbox"]:checked ~ ul,
+.dropdown_profile > ul:target {
+  left: 0;
+}
+
+.dropdown_profile > [type="checkbox"]:checked + label:after,
+.dropdown_profile > ul:target ~ a:after {
+  content: "\f0d8";
+}
+
+.dropdown_profile a.close {
+  display: none;
+}
+
+.dropdown_profile > ul:target ~ a.close {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  text-indent: -100vw;
+  z-index: 1000;
+}

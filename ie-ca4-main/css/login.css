@@ -1,0 +1,66 @@
+@import "../fonts/vazir-fonts/fonts.css";
+
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    width: 100%;
+    direction: rtl;
+    font-family: "Vazir" !important;
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+}
+
+.text-cen {
+    text-align: center;
+}
+
+.form-control{
+    text-align: left;
+}
+
+/* button */
+.button {
+    border-radius: 3px;
+}
+.form-button {
+    background-color: #4E4E50;
+    border-color: #4E4E50;
+    color: #FFFFFF;
+}
+.form-button:hover,
+.form-button:focus,
+.form-button:active,
+.form-button.active,
+.form-button:active:focus,
+.form-button:active:hover,
+.form-button.active:hover,
+.form-button.active:focus {
+    background-color: #B12025;
+    border-color: #B12025;
+    color: #FFFFFF;
+}
+
+.button-l {
+    width: 100% !important;
+}
+
+/*background*/
+.main-back {
+    background: #292929;
+}
+
+.main-txt {
+    color: #FFFFFF !important;
+}
+
+.login-container {
+    max-width: 400px;
+    z-index: 100;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+

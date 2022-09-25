@@ -1,0 +1,144 @@
+@import "header.css";
+@import "../fonts/vazir-fonts/fonts.css";
+
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    width: 100%;
+    direction: rtl;
+    font-family: "Vazir" !important;
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+}
+
+/*background*/
+.main-back {
+    background: #292929;
+}
+
+.row {
+    margin-top: 150px;
+    text-align: center;
+    border: 1px;
+    border-radius: 25px;
+    perspective: 1px;
+    overflow: hidden;
+    font-size: small;
+    background-color: #4E4E50;
+    color: #FFFFFF;
+}
+
+.watch-shadow {
+    box-shadow: 4px 4px 4px  black;
+}
+
+.movie-info {
+    text-align: right;
+}
+
+.movie-info ul {
+    list-style-type:none;
+    padding-inline-start: 0%;
+    padding-top: 1%;
+}
+
+.movie-info li {
+    margin: 0 0 5px 0;
+}
+
+.movie-info span {
+    font-weight: bold;
+}
+
+.movie-info .bin{
+    width: 30px;
+    height: 30px;
+    padding-top: 1%;
+}
+
+.movie-rate {
+   text-align: center;
+   font-weight: bold;
+}
+
+.movie-rate ul {
+    list-style-type:none;
+    padding-inline-start: 0%;
+    padding-top: 20%;
+}
+
+.movie-rate li {
+    margin: 0 0 30px 0;
+}
+
+
+.movie-name {
+    text-align: right;
+    padding-top: 1%;
+    font-size: medium;
+}
+
+.movie-img  img{
+    position: relative;
+    left: 100px;
+    top: 0.5px;
+    height: 141px;
+    width: 150px;
+}
+
+.mov-2 {
+    margin-top: 30px;
+}
+
+.column img {
+    height: 200px;
+    width: 200px;
+    padding-top: 15%;
+    padding-bottom: 10%;
+    padding-right: 1%;
+    padding-left: 1%;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+  position: relative;
+}
+
+.recom-2 img{
+    position: relative;
+    bottom: 36px;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  width: 70%;
+  height: 54%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: rgba(150, 0, 0, 0.5);
+}
+
+.column:hover .image {
+  opacity: 0.3;
+}
+
+.column:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 15px;
+  padding: 20px 32px;
+  text-align: center;
+}

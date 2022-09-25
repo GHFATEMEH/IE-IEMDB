@@ -1,0 +1,119 @@
+@import "header.css";
+@import "../fonts/vazir-fonts/fonts.css";
+
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    width: 100%;
+    direction: rtl;
+    font-family: "Vazir" !important;
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+}
+
+/*background*/
+.main-back {
+    background: #292929;
+}
+
+
+.row {
+    margin-top: 10px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.actor-info {
+    text-align: right;
+    padding-top: 5%;
+    padding-right: 10%;
+}
+
+.actor-info ul {
+    list-style-type:none;
+    padding-inline-start: 0%;
+    padding-top: 1%;
+}
+
+.actor-info li {
+    margin: 0 0 5px 0;
+}
+
+.actor-title span{
+    text-align: center;
+    right: 60px;
+    position: relative;
+}
+
+.column img {
+    height: 200px;
+    width: 200px;
+    /*padding-top: 15%;
+    padding-bottom: 10%;
+    padding-right: 1%;
+    padding-left: 1%;*/
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+  position: relative;
+}
+
+.title-row {
+   margin-top: 30px;
+   text-align: center;
+   right: 60px;
+   position: relative;
+}
+
+.movies-row {
+    margin-top: 30px;
+    border: 1px;
+    border-radius: 25px;
+    perspective: 1px;
+    overflow: hidden;
+    background-color: #4E4E50;
+    width: 100%;
+}
+
+.actor-img img {
+   position: relative;
+   width: 430px;
+   height: 530px;
+   top: 20px;
+   right: 15px;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 73%;
+  height: 87%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: rgba(150, 0, 0, 0.5);
+}
+
+.column:hover .image {
+  opacity: 0.3;
+}
+
+.column:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 15px;
+  padding: 20px 32px;
+  text-align: center;
+}

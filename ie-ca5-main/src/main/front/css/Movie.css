@@ -1,0 +1,268 @@
+@import "header.css";
+@import "../fonts/vazir-fonts/fonts.css";
+
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    width: 100%;
+    direction: rtl;
+    font-family: "Vazir" !important;
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+}
+
+/*background*/
+.main-back {
+    background: #292929;
+}
+
+
+.background-img img {
+    width: 1500px;
+    height: 300px;
+    display: block;
+    left: 10px;
+}
+
+.row {
+    margin-top: 200px;
+    text-align: center;
+    border: 1px;
+    border-radius: 25px;
+    perspective: 1px;
+    overflow: hidden;
+    font-size: small;
+    background-color: #4E4E50;
+    color: #FFFFFF;
+}
+
+
+.row-title p{
+    text-align: center;
+    position: relative;
+    right: 340px;
+}
+
+.column img {
+    height: 200px;
+    width: 150px;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    border-radius: 50%;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 5px;
+  position: relative;
+}
+
+.row-title-comment {
+    position: relative;
+    left: 2px;
+}
+
+
+.row-com {
+    margin-top: 50px;
+    padding-top: 2%;
+    padding-bottom: 40px;
+}
+
+.row-comment {
+    margin-top: 40px;
+    padding-bottom: 10px;
+    background-color: #FFFFFF;
+    text-align: center;
+    border: 1px;
+    border-radius: 25px;
+    perspective: 1px;
+    overflow: hidden;
+    font-size: small;
+    color: #292929;
+}
+
+.txt-name {
+    text-align: right;
+    padding-right: 3%;
+    font-size: 1.2em;
+}
+
+.row-comment hr {
+    width: 90%
+}
+
+.row-comment input{
+    text-align: right;
+    width: 90%;
+    border: 0;
+}
+
+
+.row-comment button {
+    border-radius: 12px;
+    color: #FFFFFF;
+    font-size: 1.2em;
+    background-color: #4CAF50;
+    border-color: #4CAF50;
+    padding: 10px 24px;
+    width: 95px;
+    height: 40px;
+    border-style: solid;
+    right: 250px;
+    position: relative;
+}
+
+.comment-txt {
+    text-align: right;
+    padding-right: 8%;
+}
+
+#image-like, #image-like-2, #image-like-3{
+  width: 24px;
+  position: relative;
+  bottom: 40px;
+  right: 230px;
+}
+
+#image-dislike, #image-dislike-2, #image-dislike-3 {
+  width: 25px;
+  position: relative;
+  bottom: 40px;
+  right: 240px;
+}
+
+.like-val {
+    bottom: 40px;
+    right: 220px;
+    position: relative;
+}
+
+.dislike-val {
+    bottom: 75px;
+    right: 255px;
+    position: relative;
+}
+
+.row-show {
+    height: 110px;
+}
+
+.movie-info ul {
+    list-style-type:none;
+    padding-inline-start: 0%;
+    padding-top: 0%;
+    text-align: right;
+}
+
+.movie-info li {
+    margin: 0 0 10px 0;
+}
+
+.row-top {
+    z-index = 1;
+    margin-top: -125px;
+    position = relative;
+    border = 0;
+    border-radius: 0px;
+    background-color: transparent;
+}
+
+.movie-name{
+    right: 120px;
+    position: relative;
+}
+
+.date {
+    text-align: left;
+}
+
+.movie-description {
+    text-align: right;
+}
+
+.movie-rate {
+    position: relative;
+    width:150px;
+    height: 175px;
+    position: relative;
+    background-color: rgb(150, 0, 0, 0.7);
+    padding-top: 25px;
+}
+
+.movie-img img {
+    position: relative;
+    width:150px;
+    height: 200px;
+    position: relative;
+    right: 1px;
+}
+
+.rate {
+    font-size: 3em;
+}
+
+.rate-txt {
+    text-align: right;
+    padding-right: 1px;
+    bottom: 5px;
+    position: relative;
+}
+
+.user-rate-txt {
+    text-align: left;
+    font-size: 1.5em;
+    padding-left: 30px;
+    bottom: 20px;
+    position: relative;
+}
+
+.user-number {
+    font-size: 10px;
+    padding-left: 80px;
+    bottom: 50px;
+    position: relative;
+}
+
+.star-img {
+    width: 20px;
+    height: 20px;
+}
+
+.movie-info hr {
+    background-color: #4E4E50;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 150px;
+  width: 150px;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: rgba(150, 0, 0, 0.5);
+  border-radius: 50%;
+}
+
+.column:hover .image {
+  opacity: 0.3;
+}
+
+.column:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 15px;
+  padding: 20px 32px;
+  text-align: center;
+}
